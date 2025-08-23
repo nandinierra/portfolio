@@ -1,0 +1,151 @@
+
+.about-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+  z-index: 0;
+  margin-top: 0px;
+  animation: fadeIn 1s ease-in;
+}
+.container{
+   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1f9 100%);
+   padding-top: 50px;
+   overflow: visible;
+   width: 100%;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container h1 {
+  font-size: 48px;
+  color: #ba31c6;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+
+
+.about-description {
+  margin: 0 auto 40px;
+  width: 75%;
+  font-size: 18px;
+  line-height: 36px;
+  color: #44464a;
+  font-weight: 400;
+  animation: fadeInUp 1.2s ease-in;
+   text-align: start;
+}
+
+.about-timeline-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  animation: fadeInUp 1.5s ease-in;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* 🖥️ Medium Laptops (1025px - 1280px) */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .about-container h1 {
+    font-size: 44px;
+  }
+   .about-container p {
+    /* font-size: 44px; */
+    text-align: start;
+    width: 80%;
+  }
+  .about-description {
+    width: 80%;
+    font-size: 17.5px;
+    line-height: 32px;
+  }
+
+ 
+}
+
+
+/* 💊 Tablets / Small Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-container h1 {
+    font-size: 40px;
+  }
+   .about-container p {
+         width: 90%;
+    text-align: start;
+  }
+
+  .about-description {
+    width: 85%;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+
+/* 📲 Large Phones / Small Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about-container h1 {
+    font-size: 36px;
+  }
+
+  .about-description {
+    width: 98%;
+   
+    font-size: 16.5px;
+    line-height: 28px;
+    text-align: start;
+  }
+
+ 
+}
+
+
+/* 📱 Mobile Phones (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .about-container h1 {
+    font-size: 28px;
+  }
+
+  .about-description {
+    width: 98%;
+    font-size: 15.5px;
+    line-height: 26px;
+    text-align: start;
+  }
+
+ 
+}

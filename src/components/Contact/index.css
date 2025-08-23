@@ -1,0 +1,381 @@
+.Link {
+  text-decoration: none;
+}
+
+.contact-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: linear-gradient(to right, #fdf4ff, #f3e8ff);
+  animation: fadeInUp 1.5s ease-in;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-heading {
+  margin-top: 50px;
+  font-size: 48px;
+  color: #ba31c6;
+  font-weight: 800;
+  letter-spacing: 1px;
+ 
+}
+
+
+
+.contact-paragraph {
+  font-size: 20px;
+  color: #44464a;
+  width: 80%;
+  max-width: 800px;
+  margin: 10px auto 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+.other-contact-container {
+  border: none;
+  width: 400px;
+    height: 60px;
+    border-radius: 10px;
+  background: linear-gradient(to right, #f754ff, #c134fc);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(232, 94, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 0px;
+}
+.other-contact-container h1{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.other-contact-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(232, 94, 255, 0.5);
+}
+
+.left-wrap-container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.find-me {
+  margin-left: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #504b4b;
+  font-family: 'Poppins', sans-serif;
+}
+
+form {
+  width: 350px;
+  background: white;
+  border-radius: 16px;
+  text-align: start;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  border: 2px solid #eb89ff;
+  box-shadow: 0 10px 25px rgba(235, 137, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.lable-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  padding: 12px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #eb89ff;
+  box-shadow: 0 0 5px #eb89ff99;
+  outline: none;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+textarea {
+  max-height: 50px;
+  resize: vertical;
+}
+
+.form-other-contacts-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  width: 80%;
+  margin: auto;
+  animation: fadeInUp 1.5s ease-in;
+} 
+
+@keyframes fadeInUp{
+  from{
+     opacity: 0;
+     transform: translateY(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.send-msg-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.send-msg-btn button{
+    margin-top: 0px;
+    font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(to right, #ce28cb, #8b5cf6);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border: none;
+  border-radius: 10px;
+  padding: 12px 26px;
+}
+
+.send-msg-btn button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(32, 23, 208, 0.4);
+}  
+
+
+/* 🔹 Small Mobiles (<= 480px) */
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 28px;
+  }
+
+  .contact-paragraph {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .form-other-contacts-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .left-wrap-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+  }
+
+  form {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    padding: 20px 10px;
+  }
+
+  .other-contact-container {
+    width: 90%;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .other-contact-container h1 {
+    font-size: 18px;
+  }
+
+  .find-me {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+
+  .send-msg-btn button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+/* 🔹 Large Mobiles & Small Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-heading {
+    font-size: 32px;
+  }
+
+  .contact-paragraph {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .form-other-contacts-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .left-wrap-container {
+    width: 80%;
+    margin-top: 0px;
+  }
+
+  form {
+    width: 420px; 
+    margin: auto; 
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .other-contact-container {
+    width: 80%;
+    font-size: 17px;
+    height: 55px;
+  }
+
+  .other-contact-container h1 {
+    font-size: 20px;
+  }
+
+  .find-me {
+    font-size: 26px;
+    margin-top: 0px;
+  }
+}
+
+
+/* 🔹 Large Tablets & Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-heading {
+    font-size: 38px;
+  }
+
+  .contact-paragraph {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .form-other-contacts-container {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-wrap-container {
+    width: 400px !important;
+  }
+  form{
+    width: 320px;
+  }
+ 
+
+  .other-contact-container {
+    width: 380px;
+    height: 55px;
+  }
+
+  .other-contact-container h1 {
+    font-size: 22px;
+  }
+
+  .find-me {
+    font-size: 28px;
+  }
+}
+
+
+/* 🔹 Medium Laptops (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .contact-heading {
+    font-size: 44px;
+  }
+
+  .contact-paragraph {
+    font-size: 19px;
+  } 
+  .form-other-contacts-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .left-wrap-container {
+    width: 440px;
+  }
+
+  form {
+    width: 320px;
+  }
+
+  .other-contact-container {
+    width: 390px;
+  }
+
+  .other-contact-container h1 {
+    font-size: 23px;
+  }
+
+  .find-me {
+    font-size: 30px;
+  }
+
+  .send-msg-btn button {
+    font-size: 15px;
+  }
+}
